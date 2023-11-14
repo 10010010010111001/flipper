@@ -1,0 +1,243 @@
+import styles from './Home.module.scss'
+
+import { WhatsappLogo, TiktokLogo } from 'phosphor-react';
+
+import { Link } from 'react-router-dom'
+import { Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css'
+import 'swiper/scss';
+import 'swiper/css/pagination';
+
+// import { useRef, useState } from 'react'
+// import { Canvas } from '@react-three/fiber'
+// import { useLoader } from "@react-three/fiber";
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+
+// const Model = () => {
+//   const gltf = useLoader(GLTFLoader, "./src/flp.glb");
+//   return (
+//     <>
+//       <primitive object={gltf.scene} scale={0.4} />
+//     </>
+//   );
+// };
+
+export default function Home() {
+  return (
+    <>
+      <header className={styles.header}>
+        <img src="https://static.tildacdn.com/tild3363-3430-4063-b531-323834643038/orange_text_transpar.svg" alt="" />
+        <nav>
+          <a href="#main">Início</a>
+          <a href="#flipper">Flipper Zero</a>
+          <a href="#about">Sobre nós</a>
+          <a href="#testimonials">Depoimentos</a>
+          <Link to="/form">
+            <button type="button">
+              Comprar
+              <small> R$ 950,90</small>
+            </button>
+          </Link>
+        </nav>
+      </header>
+
+      <div id="main" className={styles.main}>
+        <div className={styles.title_wrapper}>
+          <h1 className={styles.tipewriter}>Hack the Planet!</h1>
+        </div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0527/9806/2745/products/top.png?v=1671722838"
+          alt=""
+        />
+        {/* <Canvas>
+            <Model />
+            <ambientLight intensity={0.1} />
+            <mesh>
+              <boxGeometry />
+              <meshStandardMaterial />
+            </mesh>
+          </Canvas> */}
+        <h2>
+          Adquira seu Flipper Zero com praticidade e segurança diretamente no Brasil!
+        </h2>
+        <p>
+          Garantimos sua entrega entre 7 a 21 dias. Enviamos com frete gratuito para todo o país.
+        </p>
+        <p>
+          R$ 950,90 à vista no PIX ou R$ 1197,00 no cartão.
+        </p>
+        <div>
+          <Link to="/form">
+            <button type="button">Comprar</button>
+          </Link>
+          <a
+            href="https://api.whatsapp.com/send?phone=+5561986027994&text=Oi Dev!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero."
+            target="_blank"
+          >
+            <button>
+              Entrar em contato
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div id="flipper" className={styles.flipper}>
+        <div className={styles.text_wrapper}>
+          <h2>O que é o Flipper Zero?</h2>
+          <p>Flipper Zero é uma multi-ferramenta portátil para engenheiros e geeks em um corpo semelhante a um brinquedo. Ele adora pesquisar coisas digitais como protocolos de rádio, sistemas de controle de acesso, hardware e muito mais. É totalmente de código aberto e personalizável, para que você possa estendê-lo da maneira que quiser. Características do Flipper Zero:</p>
+          <ul>
+            <li>- Sub-GHz - Use como um controle remoto de rádio com muitos protocolos.</li>
+            <li>- NFC - Armazene todos os seus mifare, NTAG e outros cartões e tags NFC.</li>
+            <li>- RFID - Armazene, emule e escreva seus keyfobs LF RFID, cartões e muito mais.</li>
+            <li>- Transceptor IR - Controle remoto Universal IR para sua TV e outros aparelhos.</li>
+            <li>- Animal de estimação virtual - Um golfinho fofo com personalidade.</li>
+            <li>- Firmware de código aberto - Código seus próprios aplicativos e plugins.</li>
+            <li>- Bluetooth LE - Ampliar recursos com aplicativos móveis Flipper.</li>
+            <li>- U2F Security Token - autenticar em todos os lugares com sua Flipper via FIDO</li>
+            <li>- BadUSB - Execute quaisquer scripts de emulação de teclado</li>
+            <li>- iButton - Armazene todas as suas chaves Dallas, Cyfral e Metakom</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="about" className={styles.about}>
+        <div className={styles.text_wrapper}>
+          <h2>Sobre nós</h2>
+          <p>
+            Como usuários assíduos e revendedores do Flipper Zero desde 2021, nós, @Evelin.Cristina.S e @Roosevelt.ink conquistamos diversos clientes em todo o Brasil importando o Golfinho mais amado por Hackers & Geeks, clientes nos quais você pode consultar na central/grupo de referências!
+
+          </p>
+          <p>Estas são algumas das vantagens que terá adquirindo seu Flipper Zero aqui:</p>
+        </div>
+        <div className={styles.cards}>
+          <div className={styles.card}>
+            <div className={styles.img_wrapper}>
+              <img src="https://user-images.githubusercontent.com/10697207/186202043-26947e28-b1cc-459a-8f20-ffcc7fc0c71c.png" alt="" />
+            </div>
+            <strong>Melhores Firmwares</strong>
+            <p>Fica a seu critério decidir no momento da compra o firmware que o acompanhará. Contando com Unleashed, RogueMaster, CarClown e outros...</p>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.img_wrapper}>
+              <img src="https://cdn-icons-png.flaticon.com/512/411/411780.png" alt="" />
+            </div>
+            <strong>Frete grátis</strong>
+            <p>Envio rápido e gratuito para todo o pais na compra do seu Flipper Zero (consultar a estima de entrega no ato da compra)</p>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.img_wrapper}>
+              <img className={styles.wpp} src="https://cdn-icons-png.flaticon.com/512/152/152740.png" alt="" />
+            </div>
+            <strong>Acesso ao grupo</strong>
+            <p>Obtenha acesso ao nosso grupo vip onde compartilhamos conhecimento, diversos firmwares e formas de usar seu Flipper!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="testimonials" className={styles.testimonials}>
+        <h2>
+          Depoimentos de clientes
+        </h2>
+        <Swiper
+          className={styles.swiper}
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+          mousewheel={true}
+        >
+          <SwiperSlide className={styles.slide}>
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Cumpre o prometido e funciona muito bem, resolveu minhas cópias de chave de casa, estacionamento e escritório. Muito interessante!
+              </p>
+              <cite>
+                <img
+                  src="https://flipper-zero-brasil.vercel.app/assets/fotos/71.jpg"
+                />
+                Claudio Sales
+              </cite>
+            </blockquote>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Agradecer ao João e a Dandara, e pelo unleashed configurado, chegou em 8 dias.
+              </p>
+              <cite>
+                <img
+                  src="https://flipper-zero-brasil.vercel.app/assets/fotos/70.jpg"
+                />
+                Lucas Castro
+              </cite>
+            </blockquote>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Recebi o produto rapidamente e fui muito bem atendido! Recomendo a todos!
+              </p>
+              <cite>
+                <img
+                  src="https://flipper-zero-brasil.vercel.app/assets/fotos/45.jpg"
+                />
+                Rodrigo Canela
+              </cite>
+            </blockquote>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                9 dias até o rio de janeiro, obrigado pela atenção e meus parabéns pelo trabalho :)
+              </p>
+              <cite>
+                <img
+                  src="https://flipper-zero-brasil.vercel.app/assets/fotos/75.jpg"
+                />
+                Sara Rodrigues
+              </cite>
+            </blockquote>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Uma mão na roda para os testes de segurança do meu trabalho. Já estou estudando o código do dispositivo
+              </p>
+              <cite>
+                <img
+                  src="https://flipper-zero-brasil.vercel.app/assets/fotos/73.jpeg"
+                />
+                Marcos Andrade
+              </cite>
+            </blockquote>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+
+      <footer className={styles.footer}>
+        <div>
+          <h2>FlipperZeroBrasil</h2>
+          <p>©2022 Flipper.Zero.Brasil</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=+556198602-7994&text=Oi!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
+            <WhatsappLogo weight="light" />
+          </a>
+          <a href="https://www.tiktok.com/@flipper.zero.brasil">
+            <TiktokLogo weight="light" />
+          </a>
+        </div>
+      </footer>
+    </>
+  )
+}
