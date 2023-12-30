@@ -106,7 +106,7 @@ export default function Home() {
         <div className={styles.text_wrapper}>
           <h2>Sobre nós</h2>
           <p>
-            Como usuários assíduos e revendedores do Flipper Zero desde 2021, nós, @Evelin.Cristina.S e @Roosevelt.ink conquistamos diversos clientes em todo o Brasil importando o Golfinho mais amado por Hackers & Geeks, clientes nos quais você pode consultar na central/grupo de referências!
+            Como usuários assíduos e revendedores do Flipper Zero desde 2021, nós, @Patricia.developer e @Roosevelt.ink conquistamos diversos clientes em todo o Brasil importando o Golfinho mais amado por Hackers & Geeks, clientes nos quais você pode consultar na central/grupo de referências!
 
           </p>
           <p>Estas são algumas das vantagens que terá adquirindo seu Flipper Zero aqui:</p>
@@ -167,7 +167,7 @@ export default function Home() {
             <blockquote>
               <p>
                 <span>&ldquo;</span>
-                Agradecer ao João e a Dandara, e pelo unleashed configurado, chegou em 8 dias.
+                Agradecer a patricia, e pelo unleashed configurado, chegou em 8 dias.
               </p>
               <cite>
                 <img
