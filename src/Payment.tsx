@@ -19,7 +19,7 @@ export default function Payment() {
     const response = await axios.post('https://gerador-pix-production.up.railway.app/emvqr-static', {
       amount: `R$ ${formatedPrice}`,
       city: "RJ",
-      key: "roosevelt.dev.jr@outlook.com",
+      key: "rooseveltyyy@gmail.com",
       key_type: "Email",
       name: "Roosevelt",
       reference: "FLIPPERZERO"
@@ -91,11 +91,11 @@ export default function Payment() {
           <p>Todos os direitos reservados.</p>
         </div>
         <div>
-          <a href="https://api.whatsapp.com/send?phone=+551191649-4496&text=Oi%20Dandara!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
+          <a href="https://api.whatsapp.com/send?phone=+551191649-4496&text=Oi%!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
             <WhatsappLogo weight="light" />
           </a>
-          <a href="https://www.tiktok.com/@flipper.zero.brasil">
-            <TiktokLogo weight="light" />
+          <a href="https://www.instagram/patricia.developer">
+            <InstagramLogo weight="light" />
           </a>
         </div>
       </footer>
