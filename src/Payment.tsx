@@ -3,7 +3,7 @@ import styles from './Payment.module.scss'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { WhatsappLogo, TiktokLogo } from 'phosphor-react';
+import { WhatsappLogo, InstagramLogo } from 'phosphor-react';
 
 export default function Payment() {
   const [price, setPrice] = useState(950.90)
@@ -94,7 +94,7 @@ export default function Payment() {
           <a href="https://api.whatsapp.com/send?phone=+551191649-4496&text=Oi%!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
             <WhatsappLogo weight="light" />
           </a>
-          <a href="https://www.instagram/patricia.developer">
+          <a href="https://www.instagram/james.hebert12">
             <InstagramLogo weight="light" />
           </a>
         </div>
