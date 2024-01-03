@@ -1,6 +1,6 @@
 import styles from './Home.module.scss'
 
-import { WhatsappLogo, TiktokLogo } from 'phosphor-react';
+import { WhatsappLogo, InstagramLogo } from 'phosphor-react';
 
 import { Link } from 'react-router-dom'
 import { Pagination } from 'swiper'
