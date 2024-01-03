@@ -106,7 +106,7 @@ export default function Home() {
         <div className={styles.text_wrapper}>
           <h2>Sobre nós</h2>
           <p>
-            Como usuários assíduos e revendedores do Flipper Zero desde 2021, nós, @Patricia.developer e @Roosevelt.ink conquistamos diversos clientes em todo o Brasil importando o Golfinho mais amado por Hackers & Geeks, clientes nos quais você pode consultar na central/grupo de referências!
+            Como usuários assíduos e revendedores do Flipper Zero desde 2021, nós, @Patricia.developer e @james.hebert12 conquistamos diversos clientes em todo o Brasil importando o Golfinho mais amado por Hackers & Geeks, clientes nos quais você pode consultar na central/grupo de referências!
 
           </p>
           <p>Estas são algumas das vantagens que terá adquirindo seu Flipper Zero aqui:</p>
@@ -233,7 +233,7 @@ export default function Home() {
           <a href="https://api.whatsapp.com/send?phone=+556198602-7994&text=Oi!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
             <WhatsappLogo weight="light" />
           </a>
-          <a href="https://www.instagram.com/patricia.developer">
+          <a href="https://www.instagram.com/james.hebert12">
             <InstagramLogo weight="light" />
           </a>
         </div>
