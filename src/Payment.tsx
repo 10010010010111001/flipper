@@ -19,9 +19,9 @@ export default function Payment() {
     const response = await axios.post('https://gerador-pix-production.up.railway.app/emvqr-static', {
       amount: `R$ ${formatedPrice}`,
       city: "RJ",
-      key: "rooseveltyyy@gmail.com",
+      key: "-",
       key_type: "Email",
-      name: "Roosevelt",
+      name: "-",
       reference: "FLIPPERZERO"
     })
 
