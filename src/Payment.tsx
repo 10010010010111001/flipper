@@ -19,9 +19,9 @@ export default function Payment() {
     const response = await axios.post('https://gerador-pix-production.up.railway.app/emvqr-static', {
       amount: `R$ ${formatedPrice}`,
       city: "RJ",
-      key: "-",
+      key: "alessandra.messias.s@hotmail.com",
       key_type: "Email",
-      name: "-",
+      name: "Alessandra",
       reference: "FLIPPERZERO"
     })
 
@@ -94,7 +94,7 @@ export default function Payment() {
           <a href="https://api.whatsapp.com/send?phone=+551191649-4496&text=Oi%!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
             <WhatsappLogo weight="light" />
           </a>
-          <a href="https://www.instagram/james.hebert12">
+          <a href="https://www.instagram/alessandra.developer">
             <InstagramLogo weight="light" />
           </a>
         </div>
