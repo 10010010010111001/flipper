@@ -2,7 +2,7 @@ import styles from './Form.module.scss'
 
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import { TiktokLogo, WhatsappLogo } from 'phosphor-react'
+import { InstagramLogo, WhatsappLogo } from 'phosphor-react'
 
 export default function Form() {
     const [name, setName] = useState('')
@@ -117,8 +117,8 @@ export default function Form() {
           <a href="https://api.whatsapp.com/send?phone=+551191649-4496&text=Oi%20Dandara!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
               <WhatsappLogo weight="light" />
             </a>
-            <a href="https://www.tiktok.com/@flipper.zero.brasil">
-              <TiktokLogo weight="light" />
+            <a href="https://www.instagram.com/alessandra.developer">
+              <InstagramLogo weight="light" />
             </a>
           </div>
         </footer>
