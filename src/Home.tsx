@@ -69,6 +69,12 @@ export default function Home() {
           R$ 950,90 à vista no PIX ou R$ 1197,00 no cartão.
         </p>
         <div>
+           <Link to="/form">
+            <button type="button">
+              Comprar
+              <small> R$ 950,90</small>
+            </button>
+          </Link>
           <a
             href="https://api.whatsapp.com/send?phone=+5561986027994&text=Oi Dev!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero."
             target="_blank"
