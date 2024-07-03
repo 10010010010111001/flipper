@@ -69,15 +69,12 @@ export default function Home() {
           R$ 950,90 à vista no PIX ou R$ 1197,00 no cartão.
         </p>
         <div>
-          <Link to="/form">
-            <button type="button">Comprar</button>
-          </Link>
           <a
             href="https://api.whatsapp.com/send?phone=+5561986027994&text=Oi Dev!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero."
             target="_blank"
           >
             <button>
-              Entrar em contato
+              Comprar
             </button>
           </a>
         </div>
@@ -106,7 +103,7 @@ export default function Home() {
         <div className={styles.text_wrapper}>
           <h2>Sobre nós</h2>
           <p>
-            Como usuários assíduos e revendedores do Flipper Zero desde 2021, nós, @jeniffer.developer e @Roosevelt.ink conquistamos diversos clientes em todo o Brasil importando o Golfinho mais amado por Hackers & Geeks, clientes nos quais você pode consultar na central/grupo de referências!
+            Como usuário assíduo e revendedor do Flipper Zero desde 2021, @kyogre.corp conquistou diversos clientes em todo o Brasil importando o Golfinho mais amado por Hackers & Geeks, clientes nos quais você pode consultar na central/grupo de referências!
 
           </p>
           <p>Estas são algumas das vantagens que terá adquirindo seu Flipper Zero aqui:</p>
@@ -233,7 +230,7 @@ export default function Home() {
           <a href="https://api.whatsapp.com/send?phone=+556198602-7994&text=Oi!%20Gostaria%20de%20saber%20mais%20sobre%20o%20FlipperZero.">
             <WhatsappLogo weight="light" />
           </a>
-          <a href="https://www.instagram.com/jeniffer.developer">
+          <a href="https://www.instagram.com/kyogre.corp">
             <InstagramLogo weight="light" />
           </a>
         </div>
